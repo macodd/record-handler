@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: med_rec
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=S3cretPassw0rd
+      - POSTGRES_USER=med_rec_user
+      - POSTGRES_DB=med_rec
